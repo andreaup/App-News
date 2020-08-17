@@ -20,37 +20,37 @@ const Categories = ({ categories }) => {
 
                <li>
               <Link to={"/categories/politics"}>
-                  <a href=""><i className="fa fa-balance-scale fa-lg"></i>  Política</a>
+                  <i className="fa fa-balance-scale fa-lg"></i>  Política
               </Link>
               </li>
 
                <li>
                <Link to={"/categories/international"}>
-                    <a href=""><i className="fa fa-globe fa-lg "></i>  Internacionales</a>
+                    <i className="fa fa-globe fa-lg "></i>  Internacionales
                </Link>
               </li>
 
                <li>
                <Link to={"/categories/tech"}>
-                   <a href=""><i className="fa fa-laptop fa-lg "></i>  Tecnología</a>
+                   <i className="fa fa-laptop fa-lg "></i>  Tecnología
                </Link>
                </li>
 
                <li>
                <Link to={"/categories/shows"}>
-                   <a href=""><i className="fa fa-film fa-lg "></i>  Espectáculos</a>
+                   <i className="fa fa-film fa-lg "></i>  Espectáculos
                 </Link>
                 </li>
 
                <li>
                <Link to={"/categories/sports"}>
-                   <a href=""><i className="fa fa-futbol-o fa-lg "></i> Deportes</a>
+                   <i className="fa fa-futbol-o fa-lg "></i> Deportes
                </Link>
                </li>
 
                <li>
                <Link to={"/categories/design"}>
-                    <a href=""><i className="fa fa-paint-brush fa-lg "></i>  Diseño</a>
+                    <i className="fa fa-paint-brush fa-lg "></i>  Diseño
                </Link>
                </li>
            </ul>

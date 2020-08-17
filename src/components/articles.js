@@ -2,18 +2,18 @@ import React from "react";
 import { connect } from "react-redux";
 import Article from "./article";
 
-const Articles = ({ articles = [] }) => {
-  const curso =   onGet(articles.params.id);
+const Articles = ({param}) => {
+  console.log('testing', param)
+  // const curso =   onGet(.id);
 
   return (
     <section className="Articles">
-      {articles.map(article => (
-        <Article key={article.id} article={article} />
-      ))}
+    <> test</>
+      
     </section>
   );
 };
 
-const mapStateToProps = ({ articles }) => ({ articles });
+const mapStateToProps = ({ param }) => ({ param });
 
 export default connect(mapStateToProps)(Articles);

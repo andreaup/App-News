@@ -17,12 +17,12 @@ const store = createStore(reducer, applyMiddleware(thunk));
 function App() {
   return (
     <Provider store = {store}>
-    <div className="App">
-      <Header/>
-      <Categories/>
-      <MainRouting/>
-      <Articles/>
-    </div>
+      <div className="App">
+        <Header/>
+        <Categories/>
+        <MainRouting/>
+        <Articles/>
+      </div>
     </Provider>
   );
 }

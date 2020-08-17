@@ -2,17 +2,16 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Articles from "./articles";
 
+const redirectCategories = ({match})=>{
+  console.log(match.params.id)
+  return <Articles articles={match.params.id} />
+}
+
 const MainRouting = () => {
     return (
       <main className="main">
         <Switch>
-          <Route exact path="/categories/home" component={Articles} />
-          <Route exact path="/categories/politics" component={Articles} />
-          <Route path="/categories/international" component={Articles} />
-          <Route path="/categories/techdf" render={Articles} />
-          <Route path="/categories/shows" render={Articles} />
-          <Route path="/categories/sports" render={Articles} />
-          <Route path="/categories/design" render={Articles} />
+          <Route path="/categories/:id" render={redirectCategories} />
         </Switch>
       </main>
     );
